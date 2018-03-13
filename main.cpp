@@ -14,10 +14,13 @@ using namespace std;
 
 int main(){
   initscr();
-  printw("Hola Mundo, ");
-  printw("Como estas?, ");
-  printw("Hay herencia, ");
-  printw("Estan las clase y la matriz.");
+  do{
+    printw("Hola Mundo, ");
+    printw("Como estas?, ");
+    printw("Hay herencia, ");
+    printw("Estan las clase y la matriz.");
+    printw("Presione q para salir del programa y luego enter!");
+  }while(getch() != 'q');
   refresh();
   getch();
   endwin();
